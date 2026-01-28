@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Selection Basics | JavaScript</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            max-width: 950px;
+            margin: 40px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #f4f6f8, #e3ecf7);
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        h1 {
+            color: #4b0082;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .highlight {
+            background-color: #ffe066;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .box {
+            border: 2px solid #007bff;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 10px;
+            background-color: #f8fbff;
+        }
+
+        h2 {
+            margin-top: 25px;
+        }
+
+        ul {
+            background: #eef2f5;
+            padding: 20px 40px;
+            border-radius: 10px;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
+        .image-card {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .image-card img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            cursor: pointer;
+        }
+
+        .image-caption {
+            margin-top: 8px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 25px;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 id="title">DOM Selection Practice</h1>
+    <p class="subtitle">
+        Mini JavaScript Playground for Learning DOM Selection & Events
+    </p>
+
+    <!-- Paragraphs -->
+    <p>This is the first paragraph. Learn to select me!</p>
+    <p>This is the second paragraph. Can you find me too?</p>
+
+    <!-- Highlight Boxes -->
+    <div class="box">
+        <span class="highlight">Highlighted text 1</span>
+    </div>
+
+    <div class="box">
+        <span class="highlight">Highlighted text 2</span>
+    </div>
+
+    <div class="box">
+        <span class="highlight">Highlighted text 3</span>
+    </div>
+
+    <!-- Shopping List -->
+    <h2 id="list-title">Shopping List</h2>
+    <ul id="shopping-list">
+        <li class="list-item">Apples</li>
+        <li class="list-item">Bananas</li>
+        <li class="list-item">Oranges</li>
+        <li class="list-item">Milk</li>
+        <li class="list-item">Bread</li>
+    </ul>
+
+    <!-- Real Image Section (Unique Idea) -->
+    <div class="image-card">
+        <img id="sample-image"
+             src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+             alt="Learning JavaScript">
+        <div class="image-caption">
+            Click the image to see DOM interaction ✨
+        </div>
+    </div>
+
+    <!-- Link -->
+    <p style="margin-top: 15px;">
+        Visit:
+        <a id="sample-link" href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+           target="_blank">
+            MDN DOM Documentation
+        </a>
+    </p>
+
+    <!-- Instruction Button -->
+    <button class="btn">Open Console (F12)</button>
+
+</div>
+
+<footer>
+    JavaScript DOM Practice Project | Internship Ready 🚀
+</footer>
+
+<script src="script.js"></script>
+
+</b
